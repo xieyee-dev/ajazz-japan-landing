@@ -278,6 +278,23 @@ body {
   transition: opacity 0.3s;
 }
 
+.amazon-button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background: #FF9900;
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: opacity 0.3s;
+}
+.amazon-button:hover {
+  opacity: 0.85;
+}
+
+
 .buy-button:hover {
   opacity: 0.9;
 }

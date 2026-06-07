@@ -4,6 +4,7 @@ import { useState } from 'react';
 import './globals.css';
 
 const DRIVER_BASE = 'https://www.a-jazz.com/en/search.jsp?id=422&q=a';
+const AMAZON_STORE = 'https://www.amazon.co.jp/b?node=26286483051&me=A2M27Q6LMJP4TA';
 
 const faqItems = [
   {
@@ -304,6 +305,14 @@ export default function Home() {
                 <div className="product-actions">
                   <a href={product.url} target="_blank" rel="noopener noreferrer" className="buy-button">
                     楽天で購入
+                  </a>
+                  <a
+                    href={`${AMAZON_STORE}&utm_content=${product.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="amazon-button"
+                  >
+                    Amazonで購入
                   </a>
                   <a
                     href={DRIVER_BASE}
